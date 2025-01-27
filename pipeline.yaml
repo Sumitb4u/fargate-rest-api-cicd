@@ -68,7 +68,7 @@ Resources:
       Environment:
         Type: LINUX_CONTAINER
         ComputeType: BUILD_GENERAL1_SMALL
-        Image: aws/codebuild/standard:5.0
+        Image: 
         PrivilegedMode: true
         EnvironmentVariables:
           - Name: BUILD_OUTPUT_BUCKET
@@ -96,7 +96,7 @@ Resources:
       Environment:
         Type: LINUX_CONTAINER
         ComputeType: BUILD_GENERAL1_SMALL
-        Image: aws/codebuild/standard:5.0
+        Image: aws/codebuild/standard:6.0
         PrivilegedMode: true
         EnvironmentVariables:
           - Name: BUILD_OUTPUT_BUCKET
@@ -124,7 +124,7 @@ Resources:
       Environment:
         Type: LINUX_CONTAINER
         ComputeType: BUILD_GENERAL1_SMALL
-        Image: aws/codebuild/standard:5.0
+        Image: aws/codebuild/standard:6.0
         PrivilegedMode: true
         EnvironmentVariables:
           - Name: BUILD_OUTPUT_BUCKET
@@ -152,7 +152,7 @@ Resources:
       Environment:
         Type: LINUX_CONTAINER
         ComputeType: BUILD_GENERAL1_SMALL
-        Image: aws/codebuild/standard:5.0
+        Image: aws/codebuild/standard:6.0
         EnvironmentVariables:
           - Name: BUILD_OUTPUT_BUCKET
             Value: !Ref BuildArtifactsBucket
@@ -175,7 +175,7 @@ Resources:
       Environment:
         Type: LINUX_CONTAINER
         ComputeType: BUILD_GENERAL1_SMALL
-        Image: aws/codebuild/standard:5.0
+        Image: aws/codebuild/standard:6.0
         EnvironmentVariables:
           - Name: TEST_APPLICATION_STACK_NAME
             Value: !Sub ${AWS::StackName}-Testing
